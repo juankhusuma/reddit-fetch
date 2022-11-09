@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reddit Fetch</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="subreddit">
+      <h2>r/Music</h2>
+      <button class="load-btn" data-url="https://api.reddit.com/r/Music.json">
+        Load
+      </button>
+      <ul></ul>
+    </section>
+    <section class="subreddit">
+      <h2>r/Metalcore</h2>
+      <button
+        class="load-btn"
+        data-url="https://api.reddit.com/r/Metalcore.json"
+      >
+        Load
+      </button>
+      <ul></ul>
+    </section>
+    <section class="subreddit">
+      <h2>r/rock</h2>
+      <button class="load-btn" data-url="https://api.reddit.com/r/rock.json">
+        Load
+      </button>
+      <ul></ul>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

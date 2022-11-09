@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: rgb(255, 83, 31);
+  --bg-secondary: rgb(219, 70, 24);
+  --bg-accent: rgb(235, 27, 27);
+  --bg-highlight: rgba(255, 210, 32, 0.717);
+  --bg-accent-active: rgb(163, 15, 15);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--bg-primary);
+  margin: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    flex-direction: column;
+  }
+
+  .subreddit {
+    width: 100% !important;
+  }
+}
+
+li {
+  list-style: none;
+  padding: 0.5rem;
+  background: var(--bg-highlight);
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+}
+
+.subreddit {
+  min-width: 15rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 3rem;
+  background-color: var(--bg-secondary);
+  width: 33%;
+}
+
+.load-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 2rem;
+  padding: 0.75rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 0.45rem;
+  background-color: var(--bg-accent);
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.load-btn:hover {
+  background-color: var(--bg-accent-active);
+}
